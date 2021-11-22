@@ -1,0 +1,397 @@
+body {
+  margin: 0;
+  height: 200vh;
+  width: 100vw;
+
+  font-family: "Amatic SC", cursive;
+  font-family: "Architects Daughter", cursive;
+ 
+}
+
+/* .button
+    {
+      width: 150px;
+      padding: 10px;
+      background-color: #FF8C00;
+      box-shadow: -8px 8px 10px 3px rgba(0,0,0,0.2);
+      font-weight:bold;
+      text-decoration:none;
+    }
+    #cover{
+      position:fixed;
+      top:0;
+      left:0;
+      background:rgba(0,0,0,0.6);
+      z-index:5;
+      width:100%;
+      height:100%;
+      display:none;
+    }
+    #loginScreen
+    {
+      height:380px;
+      width:340px;
+      margin:0 auto;
+      position:relative;
+      z-index:10;
+      display:none;
+      background: url(login.png) no-repeat;
+      border:5px solid #cccccc;
+      border-radius:10px;
+    }
+    #loginScreen:target, #loginScreen:target + #cover{
+      display:block;
+      opacity:2;
+    }
+    .cancel
+    {
+      display:block;
+      position:absolute;
+      top:3px;
+      right:2px;
+      background:rgb(245,245,245);
+      color:black;
+      height:30px;
+      width:35px;
+      font-size:30px;
+      text-decoration:none;
+      text-align:center;
+      font-weight:bold;
+    } */
+
+@media only screen and (max-width: 600px) {
+  body  {
+    background-image: url(./livro.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+background-size: 150px;
+margin-bottom:-600px;
+  }
+}
+
+
+
+
+.social-buttons {
+
+display: flex;
+justify-content: flex-end;
+gap:10px;
+margin-right: 2%;
+border-top: black 2px solid
+;
+padding-top: 3px;
+width: 78vw;
+margin-left: 12%;
+
+
+}
+main {
+  margin: auto;
+  width: 90vw;
+  height: 150vh;
+  background-image: url(./musica.png);
+  background-repeat: no-repeat;
+ 
+ 
+
+}
+
+button {
+  transform-style: none;
+  font-family: "Amatic SC", cursive;
+  font-family: "Architects Daughter", cursive;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+picture {
+  margin-left: 43.5%;
+}
+
+
+
+
+header {
+  padding-right: 2%;
+  position: sticky;
+  top: 0px;
+}
+
+.caixa2 {
+  color: black;
+  background-color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline orange 2px;
+}
+
+.caixa1 {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  
+}
+
+.caixa1 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.caixa1 a:hover {
+  background-color: white;
+  color: orange;
+}
+button:hover {
+  color: orange;
+}
+
+.caixa3:hover .caixa1 {
+  display: block;
+}
+
+.caixa3:hover .caixa2 {
+  background-color: white;
+}
+
+/* menu sandwich */
+.dropdown {
+  display: none;
+}
+
+.dropbtn {
+  background-color: white;
+  padding: 16px;
+
+  border: none;
+  cursor: pointer;
+  margin-left: 83px;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #ddd;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url("searchicon.png");
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+nav div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  border-radius: 10%;
+}
+.meio {
+  background-color: orange;
+}
+.lado {
+  display: flex;
+  gap: 10px;
+
+  justify-content: flex-end;
+ 
+}
+@media only screen and (max-width: 600px) {
+  .dropdown {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .lado {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  picture hr {
+    width: 60%;
+    margin-left: 50%;
+  }
+}
+
+article {
+  height: 80vh;
+  width: 24vw;
+  display: inline-block;
+  margin-top: 5%;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  article,
+  div {
+    font-size: 10px;
+  }
+}
+
+article:first-of-type div {
+  width: 100px;
+  background-color: orange;
+  display: inline;
+  justify-content: top;
+  margin: 3px;
+}
+
+section {
+  display: inline-block;
+  position: absolute;
+  width: 35vw;
+  height: 68vh;
+  background-image: url(./t2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1250px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: orange 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: orange;
+  margin-left: 3%; margin-top: 5%;
+}
+section p {
+  background-color: white;
+  padding: 0;
+  position: absolute;
+}
+@media only screen and (max-width: 600px) {
+  section {
+    width: 35vw;
+    height: 20vh;
+    background-size: 200px;
+    font-size: small;
+  }
+  section p {
+    display: none;
+  }
+}
+
+aside hr {
+  margin: 0;
+}
+article:nth-of-type(2) {
+  float: right;
+  margin-top: 5%;
+}
+@media only screen and (max-width: 600px) {
+  .caixaesquerda { position: absolute;
+    left: 37%;
+    bottom: 5%;
+   
+  
+  }
+}
+@media only screen and (max-width: 600px) {
+  #myDropdown {
+    margin-right: 14%;
+    
+    margin-top: -32%;
+  }
+}
+.gallery { display: flex;
+  gap: 5px ;
+  background-image: url(./livro.jpg);
+background-repeat: no-repeat;
+background-position:100%;
+
+
+;
+background-size:500px ;
+height: 400px;
+}
+.caixaesquerda { width: 25%;
+  
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 10px;
+  
+  
+  
+}
+.book, .book2 { 
+
+
+width: 12%; margin-top: 6%; margin-left: 1.9%;
+
+
+
+
+
+
+}
+.book {margin-left: auto;
+}
+@media only screen and (max-width: 600px) {
+  .book,.book2 { line-height: 1.3;
+  position: absolute;
+  top: 500px;
+  
+
+  
+  }}
+
+  @media only screen and (max-width: 600px) {
+    .book   {   position: absolute;
+      left: 210px;
+    
+    }}
+    @media only screen and (max-width: 600px) {
+      .book,.book2 div { width: 10%
+      ;
+      
+      }}
+
+
+/* section h2 { 
+  font-size: 2vw;
+  color: black;
+  background: white;
+  padding: 10px 40px;
+  mix-blend-mode: screen;
+ text-align: center;
+
+
+} */
